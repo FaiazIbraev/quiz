@@ -114,9 +114,6 @@ class SecodViewController: UIViewController {
         default:
             "Sorry"
         }
-//        print("right \(rightCounter)")
-//        print("wrong \(wrongCounter)")
-//        print("slider \(sliderCounter)")
       
         
         if sliderCounter > 10{
@@ -144,7 +141,6 @@ class SecodViewController: UIViewController {
             quesLabel.text = "Бишкек столица КР?"
             titleLabel.text = "Вопрос №2"
                 wrongCounter += 0
-print("No")
         case 3:
             quesLabel.text = "Солнце белое?"
             titleLabel.text = "Вопрос №3"
@@ -198,9 +194,7 @@ print("No")
         default:
             "Sorry"
         }
-        print("right \(rightCounter)")
-        print("wrong \(wrongCounter)")
-        print("slider \(sliderCounter)")
+
         
         if sliderCounter > 10{
             slider.isHidden = true
