@@ -36,81 +36,53 @@ class SecodViewController: UIViewController {
     @IBAction func yesButtonTapped(_ sender: UIButton) {
         slider.value += 1
         sliderCounter += 1
-        rightCounter += 1
         
         switch slider.value {
         case 1:
             quesLabel.text = "Небо синее?"
             titleLabel.text = "Вопрос №1"
-            
+            print ("1")
+            rightCounter += 1
         case 2:
             quesLabel.text = "Бишкек столица КР?"
             titleLabel.text = "Вопрос №2"
                 rightCounter += 1
+            print("2")
         case 3:
             quesLabel.text = "Солнце белое?"
             titleLabel.text = "Вопрос №3"
-            if yesButton.tag == 1{
                 rightCounter += 0
-            } else if noButton.tag == 2{
-                rightCounter += 1
-            }
         case 4:
             quesLabel.text = "Трава красная?"
             titleLabel.text = "Вопрос №4"
-            if yesButton.tag == 1{
                 rightCounter += 0
-            } else if noButton.tag == 2{
-                rightCounter += 1
-            }
         case 5:
             quesLabel.text = "Иссык-Куль в Баткене?"
             titleLabel.text = "Вопрос №5"
-            if yesButton.tag == 1{
                 rightCounter += 0
-            } else if noButton.tag == 2{
-                rightCounter += 1
-            }
         case 6:
             quesLabel.text = "У машины 4 колеса?"
             titleLabel.text = "Вопрос №6"
-            if yesButton.tag == 1{
                 rightCounter += 1
-            } else if noButton.tag == 2{
-                rightCounter += 0
-            }
+
         case 7:
             quesLabel.text = "Зимой идет снег?"
             titleLabel.text = "Вопрос №7"
-            if yesButton.tag == 1{
                 rightCounter += 1
-            } else if noButton.tag == 2{
-                rightCounter += 0
-            }
+
         case 8:
             quesLabel.text = "Летом идет снег?"
             titleLabel.text = "Вопрос №8"
-            if yesButton.tag == 1{
                 rightCounter += 0
-            } else if noButton.tag == 2{
-                rightCounter += 1
-            }
         case 9:
             quesLabel.text = "Земля плоская?"
             titleLabel.text = "Вопрос №9"
-            if yesButton.tag == 1{
                 rightCounter += 0
-            } else if noButton.tag == 2{
-                rightCounter += 1
-            }
+
         case 10:
             quesLabel.text = "Есть ли белые медведи?"
             titleLabel.text = "Вопрос №10"
-            if yesButton.tag == 1{
                 rightCounter += 1
-            } else if noButton.tag == 2{
-                rightCounter += 0
-            }
         default:
             "Sorry"
         }
@@ -144,53 +116,35 @@ class SecodViewController: UIViewController {
         case 3:
             quesLabel.text = "Солнце белое?"
             titleLabel.text = "Вопрос №3"
-            if noButton.tag == 2{
                 wrongCounter += 1
-            }
         case 4:
             quesLabel.text = "Трава красная?"
             titleLabel.text = "Вопрос №4"
-            if noButton.tag == 2{
                 wrongCounter += 1
-            }
         case 5:
             quesLabel.text = "Иссык-Куль в Баткене?"
             titleLabel.text = "Вопрос №5"
-            if noButton.tag == 2{
                 wrongCounter += 1
-            }
         case 6:
             quesLabel.text = "У машины 4 колеса?"
             titleLabel.text = "Вопрос №6"
-            if noButton.tag == 2{
                 wrongCounter += 0
-            }
         case 7:
             quesLabel.text = "Зимой идет снег?"
             titleLabel.text = "Вопрос №7"
-            if noButton.tag == 2{
                 wrongCounter += 0
-            }
         case 8:
             quesLabel.text = "Летом идет снег?"
             titleLabel.text = "Вопрос №8"
-            if noButton.tag == 2{
                 wrongCounter += 1
-            }
         case 9:
             quesLabel.text = "Земля плоская?"
             titleLabel.text = "Вопрос №9"
-            if noButton.tag == 2{
                 wrongCounter += 1
-            }
         case 10:
             quesLabel.text = "Есть ли белые медведи?"
             titleLabel.text = "Вопрос №10"
-            if noButton.tag == 2{
                 wrongCounter += 0
-               
-                
-            }
         default:
             "Sorry"
         }
